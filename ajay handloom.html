@@ -8,7 +8,11 @@
   <meta name="keywords" content="Ajay Handloom, Bhawanigarh, Punjab, Curtains, Bedsheets, Blankets, Handloom Store, Ajay Kumar">
   
   <!-- 🔁 Auto redirect to homepage after 2 seconds -->
-  <meta http-equiv="refresh" content="1; url=https://ajayhandlooms.github.io/index" />
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://ajayhandlooms.github.io/index";
+    }, 2000);
+  </script>
 </head>
 <body>
   <header class="hero">
@@ -21,7 +25,7 @@
 
   <div class="floating-icons mobile-only">
     <a href="tel:9592022500" class="float-icon">📞</a>
-    <a href="https://wa.me/919592022500?text=Hey!%20I%20just%20visited%20your%20website." class="float-icon" target="_blank">💬</a>
+    <a href="https://wa.me/919592022500?text=Hey!%20I%20just%20visited%20your%20website." class="float-icon" target="_blank" rel="noopener noreferrer">💬</a>
   </div>
 
   <section class="about">
@@ -87,9 +91,8 @@
     <h2>Find Us Here</h2>
     <div class="map-box">
       <!-- ✅ Your Provided Map HTML -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.9851888841586!2d76.03372317415175!3d30.266003208041933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391049a51b128e97%3A0x5ce5c527dbe3dade!2sAjay%20Handlooms%20-%20Best%20handlooms%20showroom%20in%20Bhawanigarh!5e0!3m2!1sen!2sin!4v1761485201110!5m2!1sen!2sin"
-        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe title="Ajay Handlooms Location Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.9851888841586!2d76.03372317415175!3d30.266003208041933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391049a51b128e97%3A0x5ce5c527dbe3dade!2sAjay%20Handlooms%20-%20Best%20handlooms%20showroom%20in%20Bhawanigarh!5e0!3m2!1sen!2sin!4v1761485201110!5m2!1sen!2sin"
+        width="100%" height="400" class="map-iframe" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <p class="address">📍 Ajay Handlooms, Old Bazar, Bhawanigarh, Punjab 148026</p>
   </section>
