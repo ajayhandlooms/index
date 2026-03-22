@@ -33,7 +33,12 @@
   }
   </script>
 
-  
+
+  <!-- For Panorama View -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+
+
 </head>
 <body>
   <header class="hero">
@@ -85,6 +90,53 @@
     </div>
   </section>
 
+<!-- PANORAMA -->
+
+<section class="gallery">
+   <h2>360° Tour</h2>
+
+<!-- PANOS -->
+<div class="pano" data-img="WhatsApp Images/pano1.jpg"></div>
+<h4>Walk Around the Exterior</h4>
+<div class="pano" data-img="WhatsApp Images/pano2.jpg"></div>
+<h4>Walk Through the Interior</h4>
+<div class="pano" data-img="WhatsApp Images/pano3.jpg"></div>
+<h4>Where Style Meets Fabric</h4>
+
+
+<style>
+.pano {
+  width: 100%;
+  height: 60vh;
+  min-height: 250px;
+  max-height: 600px;
+  margin-top: 30px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .pano {
+    height: 40vh;
+  }
+}
+
+/* PC */
+@media (min-width: 1200px) {
+  .pano {
+    height: 70vh;
+  }
+}
+</style>
+
+<script>
+document.querySelectorAll('.pano').forEach((el, index) => {
+  pannellum.viewer(el, {
+    type: "equirectangular",
+    panorama: el.getAttribute("data-img"),
+    autoLoad: true
+  });
+});
+</script>
   <section class="reviews">
     <h2>Customer Reviews</h2>
     <div class="review">
@@ -95,6 +147,7 @@
       <p>“Good service.”</p>
       <span>- Jaspreet Kaur</span>
     </div>
+    
   </section>
 
   <section class="quick-links">
@@ -120,7 +173,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Ajay Handlooms | All Rights Reserved</p>
+    <p>© 2026 Ajay Handlooms | All Rights Reserved</p>
   </footer>
 </body>
 </html>
