@@ -1,22 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to Ajay Handloom — An exclusive Handlooms showroom of curtains, bedsheets, mattresse etc. Also known as AjayHandloom or Ajay Kumar or AjayKumar">
-  <meta name="keywords" content="Bedsheet, Curtain, Mats, Blankets, Bhawanigarh, Sangrur, Punjab, Amrit Pal, Amrit Pal Ajay Kumar">
-  <title>Ajay Handlooms - Bhawanigarh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" href="WhatsApp Images/icon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Handlooms - Best Handloom Showroom in Bhawanigarh</title>
+    <meta name="description" content="Ajay Handlooms - An exclusive handlooms showroom in Bhawanigarh, Punjab of Bedsheets, curtains, blankets, towels & more. Quality home furnishings.">
+    <meta name="keywords" content="handloom, bedsheets, curtains, blankets, towels, Bhawanigarh, Punjab, Ajay Handlooms, Ajay Kumar, AjayKumar, AJAY KUMAR, Monte Carlo, Trident, Raymond, Titlis, Florida">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">    
+
+
+    <!-- Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Store",
     "name": "Ajay Handlooms",
-    "alternateName": ["AjayHandloom", "Ajay Handloom", "Ajay Kumar", "AjayKumar", "Ajay Handloom Bhawanigarh"],
-    "image": "https://ajayhandlooms.github.io/WhatsApp%20Images/shop%20front.jpg",
-    "logo": "https://ajayhandlooms.github.io/index/WhatsApp%20Images/icon.ico",
+    "alternateName": ["AjayHandloom", "Ajay Handloom", "Ajay Handlooms", "Ajay Kumar", "AjayKumar", "Ajay Handloom Bhawanigarh"],
+    "image": "images/shop front.jpg",
+    "logo": "images/icon.ico",
     "description": "Ajay Handlooms — An exclusive handloom showroom in Bhawanigarh offering bedsheets, curtains, mats, blankets and more.",
     "address": {
       "@type": "PostalAddress",
@@ -34,151 +36,209 @@
   </script>
 
 
-  <!-- For Panorama View -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
 
 
-</head>
-<body>
-  <header class="hero">
-    <img src="WhatsApp Images\shop front.jpg" alt="Ajay Handlooms Shop Front" class="shop-front" />
-    <div class="overlay">
-      <h1>Ajay Handlooms</h1>
-      <p>Best Handloom Showroom in Bhawanigarh</p>
-    </div>
-  </header>
-
-  <div class="floating-icons mobile-only">
-    <a href="tel:9592022500" class="float-icon">📞</a>
-    <a href="https://wa.me/919592022500?text=Hey!%20I%20just%20visited%20your%20website." class="float-icon" target="_blank">💬</a>
-  </div>
-
-  <section class="about">
-    <div class="owner">
-      <img src="WhatsApp Images\owner.jpg" alt="Owner Ajay Kumar" class="owner-img">
-      <div>
-        <h2>Ajay Kumar</h2>
-        <p>Owner of Ajay Handlooms, Bhawanigarh</p>
-      </div>
-    </div>
-    <p>
-      Ajay Handlooms is your one-stop destination for all types of home furnishing products. 
-      We provide top-quality designs that bring comfort and elegance to your space.
-    </p>
-  </section>
-
-  <section class="products">
-    <h2>Products Available</h2>
-    <ul>
-      <li>Bed Sheets & Curtains</li>
-      <li>Sofa Covers & Diwan Sets</li>
-      <li>Blankets & Towels</li>
-      <li>Pillows & Mats</li>
-      <li>Cushions & Carpets</li>
-      <li>Mattresses</li>
-    </ul>
-  </section>
-
-  <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="WhatsApp Images\1.jpg" alt="Product 1">
-      <img src="WhatsApp Images\2.jpg" alt="Product 2">
-      <img src="WhatsApp Images\3.jpg" alt="Product 3">
-      <img src="WhatsApp Images\4.jpg" alt="Product 4">
-    </div>
-  </section>
-
-<!-- PANORAMA -->
-
-<section class="gallery">
-   <h2>360° Tour</h2>
-
-<!-- PANOS -->
-<div class="pano" data-img="WhatsApp Images/pano1.jpg"></div>
-<h4>Walk Around the Exterior</h4>
-<div class="pano" data-img="WhatsApp Images/pano2.jpg"></div>
-<h4>Walk Through the Interior</h4>
-<div class="pano" data-img="WhatsApp Images/pano3.jpg"></div>
-<h4>Where Style Meets Fabric</h4>
 
 
-<style>
-.pano {
-  width: 100%;
-  height: 60vh;
-  min-height: 250px;
-  max-height: 600px;
-  margin-top: 30px;
-}
 
-/* Mobile */
-@media (max-width: 768px) {
-  .pano {
-    height: 40vh;
-  }
-}
-
-/* PC */
-@media (min-width: 1200px) {
-  .pano {
-    height: 70vh;
-  }
-}
-</style>
-
-<script>
-document.querySelectorAll('.pano').forEach((el, index) => {
-  pannellum.viewer(el, {
-    type: "equirectangular",
-    panorama: el.getAttribute("data-img"),
-    autoLoad: true
-  });
-});
-</script>
-  <section class="reviews">
-    <h2>Customer Reviews</h2>
-    <div class="review">
-      <p>“Best place for purchasing handloom products.<br>I bought a bedsheet from here.<br>Its quality is very superior.<br>Prices are very low”</p>
-      <span>- Suresh Verma</span>
-    </div>
-    <div class="review">
-      <p>“Good service.”</p>
-      <span>- Jaspreet Kaur</span>
-    </div>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-  </section>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- For Panorama View -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+</head>
 
-  <section class="quick-links">
-    <h2>Quick Redirects</h2>
-    <ul>
-      <li><a href="#top">🏠 Home</a></li>
-      <li><a href="#products">🛍️ Products</a></li>
-      <li><a href="#gallery">🖼️ Gallery</a></li>
-      <li><a href="#location">📍 Location</a></li>
-      <li><a href="tel:9592022500">📞 Contact</a></li>
-    </ul>
-  </section>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Ajay Handlooms</h1>
+            <p>Best Handloom Showroom in Bhawanigarh</p>
+        </div>
+    </section>
 
-  <section class="map" id="location">
-    <h2>Find Us Here</h2>
-    <div class="map-box">
-      <!-- ✅ Your Provided Map HTML -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.9851888841586!2d76.03372317415175!3d30.266003208041933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391049a51b128e97%3A0x5ce5c527dbe3dade!2sAjay%20Handlooms%20-%20Best%20handlooms%20showroom%20in%20Bhawanigarh!5e0!3m2!1sen!2sin!4v1761485201110!5m2!1sen!2sin"
-        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Floating Contact Buttons + NEW AI BOT (TOP POSITION) -->
+    <div class="floating-contacts">
+        <!-- 🤖 NEW AI BOT ASSISTANT BUTTON (TOP - Opens external website) -->
+        <a href="#" onclick="openAIBot()" class="contact-btn ai-assistant-btn" title="AI Assistant">
+            🤖
+        </a>
+        
+        <!-- 📞 Call Button -->
+        <a href="tel:+919592022500" class="contact-btn call-btn" title="Call Now">📞</a>
+        
+        <!-- 💬 WhatsApp Button -->
+        <a href="https://wa.me/919592022500?text=Hey!%20I%20just%20visited%20your%20website." class="contact-btn whatsapp-btn" title="WhatsApp">💬</a>
     </div>
-    <p class="address">📍 Ajay Handlooms, Old Bazar, Bhawanigarh, Punjab 148026</p>
-  </section>
 
-  <footer>
-    <p>© 2026 Ajay Handlooms | All Rights Reserved</p>
-  </footer>
+    <h1>‎ ‎ ‎ ‎ ‎ </h1>
+    
+    <!-- About Section -->
+    <div class="about-content">
+        <div class="owner-image">
+            <img src="images/owner.jpg" alt="Ajay Kumar - Owner" class="owner-photo">
+        </div>
+        <div class="about-text">
+            <h3>Ajay Kumar</h3>
+            <p>Owner of Ajay Handlooms, Bhawanigarh</p>
+            <p>One-stop destination for premium home furnishing products with quality designs and excellent service. Discover the finest handloom collection in Punjab.</p>
+            <div class="cta-buttons">
+                <a href="#products" class="btn btn-primary">Explore Products</a>
+                <a href="#location" class="btn btn-secondary">Get Directions</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">🛏️</div>
+                    <h3>Bedsheets</h3>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🛋️</div>
+                    <h3>Sofa Covers & Diwan Sets</h3>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">⛄</div>
+                    <h3>Blankets </h3>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🧵</div>
+                    <h3>Curtains</h3>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🛋️</div>
+                    <h3>Cushions & Carpets</h3>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🛌</div>
+                    <h3>Mattresses</h3>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🛁</div>
+                    <h3>Towels</h3>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🏠</div>
+                    <h3>Pillows & Mats</h3>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">💫</div>
+                    <h3>And Many More</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('images/1.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('images/2.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('images/3.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('images/4.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('images/5.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('images/6.jpg');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 360° Virtual Tour -->
+    <section id="tour">
+        <div class="container">
+            <h2 class="section-title">360° Virtual Tour</h2>
+            <div class="tour-tabs">
+                <div class="tour-tab active" data-tab="0">🏢 Exterior</div>
+                <div class="tour-tab" data-tab="1">🏠 Interior</div>
+                <div class="tour-tab" data-tab="2">🧵 Curtain Section</div>
+            </div>
+            <div id="pano-container" class="pano active-pano" data-img="images/pano1.jpg"></div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-text">
+                        "Best place for purchasing handloom products.<br>
+                        I bought a bedsheet from here.<br>
+                        Its quality is very superior.<br>
+                        Prices are very low"
+                    </div>
+                    <div class="review-author">- Suresh Verma</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-text">
+                        "Good service. Highly recommended for all home furnishing needs. Quality products at reasonable prices."
+                    </div>
+                    <div class="review-author">- Jaspreet Kaur</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-text">
+                        "Excellent collection of handloom products. Very satisfied with the blankets and curtains I purchased."
+                    </div>
+                    <div class="review-author">- Rajesh Kumar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Us Section -->
+    <section class="find-us" id="location">
+        <div class="container">
+            <h2 class="section-title">Find Us Here</h2>
+            <div class="map-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.9851888841586!2d76.03372317415175!3d30.266003208041933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391049a51b128e97%3A0x5ce5c527dbe3dade!2sAjay%20Handlooms%20-%20Best%20handlooms%20showroom%20in%20Bhawanigarh!5e0!3m2!1sen!2sin!4v1761485201110!5m2!1sen!2sin" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="address">📍 Ajay Handlooms, Old Bazar, Bhawanigarh, Punjab 148026</p>
+            <div class="cta-buttons">
+                <a href="tel:+919592022500" class="btn btn-primary">📞 Call Now</a>
+                <a href="https://wa.me/919592022500?text=Hey!%20I%20just%20visited%20your%20website." class="btn btn-secondary">💬 WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ajay Handlooms. Best Handloom Showroom in Bhawanigarh. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#tour">360° Tour</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#location">Location</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+
+    <!-- NEW AI ASSISTANT JAVASCRIPT - Opens small window to external AI bot -->
+    <script>
+        function openAIBot() {
+            // Opens small popup window to your external AI bot
+            window.open('https://coderbahul.pythonanywhere.com/', 'aiBot', 
+                'width=500,height=700,scrollbars=yes,resizable=yes,toolbar=no,menubar=no,location=no,status=no');
+            return false;
+        }
+    </script>
 </body>
 </html>
-
-
-
-
-
